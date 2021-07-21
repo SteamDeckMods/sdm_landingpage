@@ -16,21 +16,21 @@ body {
     text-align: justify;
 }
 
-#privacypolicy {
+#privacypolicies {
     margin-top: 30px;
     line-height: 22px;
 }
 
-#privacypolicy h1 {
+#privacypolicies h1 {
     margin-bottom: 5px;
 }
 
-#privacypolicy h2 {
+#privacypolicies h2 {
     margin-top: 30px;
     margin-bottom: 5px;
 }
 
-#privacypolicy a {
+#privacypolicies a {
     color: white;
 }
 
