@@ -115,7 +115,27 @@
     </div>
   </div>
 
-  <p class="footer">&copy steam deck mods | <a href="index.html">back home</a></p>
+  <div id="footer">
+    <p class="footer">&copy steam deck mods | <a href="index.html">back home</a></p>
+</div>
+
+<div id="disclaimer">
+  <p>We use cookies on this website. You can get a detailed list on our <a href="privacy.html">privacy page</a>. <a
+      onclick="privacyOkayed();" class="disclaimerBtn">OK</a></p>
+</div>
 </body>
+
+<script>
+if(localStorage.getItem('privacyOK')){
+  document.getElementById("disclaimer").style.display = "none";
+} else {
+  document.getElementById("disclaimer").style.display = "flex";
+}
+
+function privacyOkayed(){
+  localStorage.setItem('privacyOK', true);
+  document.getElementById("disclaimer").style.display = "none";
+}
+</script>
 
 </html>
