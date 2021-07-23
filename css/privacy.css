@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #272727;
 }
@@ -34,7 +29,7 @@ body {
     color: white;
 }
 
-#privacypolicy ul {
+#privacypolicies ul {
     margin-left: 15px;
 }
 
@@ -49,4 +44,34 @@ body {
 
 .footer a {
     color: rgb(90, 90, 90);
+}
+
+#disclaimer {
+    color: rgba(238,238,238);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
+    background-color: rgba(20,20,20);
+    position: fixed;
+    bottom: 5px;
+    height: 50px;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#disclaimer a {
+    color: white;
+    cursor: pointer;
+}
+
+#disclaimer .disclaimerBtn {
+    padding: 6px 10px 7px 10px;
+    background-color: rgb(67, 121, 67);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#disclaimer .disclaimerBtn:hover {
+    background-color: rgb(103, 170, 103);
 }

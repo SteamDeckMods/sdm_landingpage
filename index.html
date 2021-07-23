@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Steam Deck Mods</title>
+  <link href="css/reset.css" rel="stylesheet" />
   <link href="css/main.css" rel="stylesheet" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,12 +30,20 @@
       </svg>
 
       <p class="info">A community of enthusiasts eager to hack and mod Valve's newest console, the Steam Deck.</p>
-      
+
       <ul id="nav">
-        <a href="portal"><li>PORTAL</li></a>
-        <a href="https://discord.gg/T9FEJ5aUNv"><li>DISCORD</li></a>
-        <a href="https://twitter.com/steamdeckmods"><li>TWITTER</li></a>
-        <a href="https://www.youtube.com/channel/UCoPqA9OjczdXn_GuuZtMD-g"><li>YOUTUBE</li></a>
+        <a href="portal">
+          <li>PORTAL</li>
+        </a>
+        <a href="https://discord.gg/T9FEJ5aUNv">
+          <li>DISCORD</li>
+        </a>
+        <a href="https://twitter.com/steamdeckmods">
+          <li>TWITTER</li>
+        </a>
+        <a href="https://www.youtube.com/channel/UCoPqA9OjczdXn_GuuZtMD-g">
+          <li>YOUTUBE</li>
+        </a>
       </ul>
 
     </div>
@@ -44,7 +53,27 @@
 
   </div>
 
-  <p class="footer">&copy steam deck mods | <a href="privacy.html">privacy</a></p>
+  <div id="footer">
+    <p class="footer">&copy steam deck mods | <a href="privacy.html">privacy</a></p>
+  </div>
+
+  <div id="disclaimer">
+    <p>We use cookies on this website. You can get a detailed list on our <a href="privacy.html">privacy page</a>. <a
+        onclick="privacyOkayed();" class="disclaimerBtn">OK</a></p>
+  </div>
 </body>
+
+<script>
+  if(localStorage.getItem('privacyOK')){
+    document.getElementById("disclaimer").style.display = "none";
+  } else {
+    document.getElementById("disclaimer").style.display = "flex";
+  }
+
+  function privacyOkayed(){
+    localStorage.setItem('privacyOK', true);
+    document.getElementById("disclaimer").style.display = "none";
+  }
+</script>
 
 </html>
