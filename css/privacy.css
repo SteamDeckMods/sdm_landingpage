@@ -16,13 +16,21 @@ body {
     line-height: 22px;
 }
 
+#privacypolicies hr {
+    margin: 30px 0px 30px 0px;
+}
+
 #privacypolicies h1 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: rgb(176, 220, 255);
 }
 
 #privacypolicies h2 {
     margin-top: 30px;
     margin-bottom: 5px;
+    font-size: 1.5em;
+    color: rgb(176, 220, 255);
 }
 
 #privacypolicies a {
