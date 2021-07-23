@@ -7,7 +7,7 @@ body {
     display: flex;
     margin: 0 auto;
     color: rgba(238,238,238);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     text-align: justify;
 }
 
@@ -17,20 +17,28 @@ body {
 }
 
 #privacypolicies hr {
-    margin: 30px 0px 30px 0px;
+    margin: 20px 0px;
 }
 
 #privacypolicies h1 {
     margin-bottom: 10px;
     font-size: 2em;
-    color: rgb(176, 220, 255);
+    font-weight: 900;
+}
+
+#privacypolicies h1.page-header {
+    font-size: 3em;
+    margin-bottom: 0.65em;
+    margin-top: 0.5em;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    letter-spacing: 1px;
 }
 
 #privacypolicies h2 {
     margin-top: 30px;
     margin-bottom: 5px;
     font-size: 1.5em;
-    color: rgb(176, 220, 255);
+    font-weight: 700;
 }
 
 #privacypolicies a {
@@ -39,6 +47,7 @@ body {
 
 #privacypolicies ul {
     margin-left: 15px;
+    list-style-type: square;
 }
 
 .footer {
