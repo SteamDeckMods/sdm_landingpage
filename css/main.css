@@ -26,7 +26,7 @@ body {
     color: rgba(238,238,238);
 }
 
-.header{
+.header {
     width: 100%;
 }
 
@@ -109,14 +109,12 @@ body {
 }
 
 @media only screen and (max-width: 1450px) {
-
     #nav a {
         font-size: 1.2em;
     }
 }
 
 @media only screen and (max-width: 1250px) {
-
     #nav a {
         font-size: 1.0em;
     }
@@ -127,7 +125,6 @@ body {
 }
 
 @media only screen and (max-width: 900px){
-
     #right {
         width: 0%;
     }

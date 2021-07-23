@@ -1,79 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Steam Deck Mods</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Steam Deck Mods</title>
-  <link href="css/reset.css" rel="stylesheet" />
-  <link href="css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;900&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;900&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXGXFW4MLP"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+  </head>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXGXFW4MLP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <body onload="onLoad();">
+    <div id="wrapper">
+      <div id="left">
+        <svg class="header" viewBox="0 0 140 20">
+          <text x="0" y="15">Steam Deck Mods</text>
+        </svg>
 
-    gtag('config', 'G-EXGXFW4MLP');
-  </script>
-</head>
+        <p class="info">A community of enthusiasts eager to hack and mod Valve's newest console, the Steam Deck.</p>
 
-<body>
-  <div id="wrapper">
-    <div id="left">
-      <svg class="header" viewBox="0 0 140 20">
-        <text x="0" y="15">Steam Deck Mods</text>
-      </svg>
-
-      <p class="info">A community of enthusiasts eager to hack and mod Valve's newest console, the Steam Deck.</p>
-
-      <ul id="nav">
-        <a href="portal">
-          <li>PORTAL</li>
-        </a>
-        <a href="https://discord.gg/T9FEJ5aUNv">
-          <li>DISCORD</li>
-        </a>
-        <a href="https://twitter.com/steamdeckmods">
-          <li>TWITTER</li>
-        </a>
-        <a href="https://www.youtube.com/channel/UCoPqA9OjczdXn_GuuZtMD-g">
-          <li>YOUTUBE</li>
-        </a>
-      </ul>
-
-    </div>
-    <div id="right">
-
+        <ul id="nav">
+          <a href="portal">
+            <li>PORTAL</li>
+          </a>
+          <a href="https://discord.gg/T9FEJ5aUNv">
+            <li>DISCORD</li>
+          </a>
+          <a href="https://twitter.com/steamdeckmods">
+            <li>TWITTER</li>
+          </a>
+          <a href="https://www.youtube.com/channel/UCoPqA9OjczdXn_GuuZtMD-g">
+            <li>YOUTUBE</li>
+          </a>
+        </ul>
+      </div>
+      <div id="right"></div>
     </div>
 
-  </div>
+    <div id="footer">
+      <p class="footer">&copy steam deck mods | <a href="privacy.html">privacy</a></p>
+    </div>
 
-  <div id="footer">
-    <p class="footer">&copy steam deck mods | <a href="privacy.html">privacy</a></p>
-  </div>
-
-  <div id="disclaimer">
-    <p>We use cookies on this website. You can get a detailed list on our <a href="privacy.html">privacy page</a>. <a
-        onclick="privacyOkayed();" class="disclaimerBtn">OK</a></p>
-  </div>
-</body>
-
-<script>
-  if(localStorage.getItem('privacyOK')){
-    document.getElementById("disclaimer").style.display = "none";
-  } else {
-    document.getElementById("disclaimer").style.display = "flex";
-  }
-
-  function privacyOkayed(){
-    localStorage.setItem('privacyOK', true);
-    document.getElementById("disclaimer").style.display = "none";
-  }
-</script>
-
+    <div id="disclaimer">
+      <p>
+        <span>We use cookies on this website. You can get a detailed list on our <a href="privacy.html">privacy page</a>.</span>
+        <a onclick="privacyOkayed();" class="disclaimerBtn">OK</a>
+      </p>
+    </div>
+  </body>
 </html>
